@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Proyecto_Procesos.Models;
 
 namespace Proyecto_Procesos.Data
 {
@@ -12,5 +13,6 @@ namespace Proyecto_Procesos.Data
             : base(options)
         {
         }
+        public DbSet<Proyecto_Procesos.Models.Cita> Cita { get; set; }
     }
 }
